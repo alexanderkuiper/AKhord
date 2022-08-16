@@ -28,8 +28,6 @@ public class PrimaryController implements Initializable {
     @FXML
     private ChoiceBox<String> toonsoortSelectorBox;
 
-    DBaccess dBaccess = new DBaccess("akkoord", "user", "password");
-
     private String[] tonen = {"A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"};
     private String[] toonsoorten = {"Majeur", "Mineur"};
     private String mijnToon = "";
@@ -63,6 +61,7 @@ public class PrimaryController implements Initializable {
     }
 
     private void writeChordToDatabase() {
+        DBaccess dBaccess = App.getdBaccess();
         AkkoordKeuzeDAO akkoordKeuzeDAO = new AkkoordKeuzeDAO(dBaccess);
         dBaccess.openConnection();
         akkoordKeuzeDAO.slaAkkoordKeuzeOp(akkoord);
@@ -83,9 +82,4 @@ public class PrimaryController implements Initializable {
         keuzeLabel.setText("Gekozen akkoord: " + akkoord.toString());
     }
 
-    private void submitDbaccess() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/nl/miwgroningen/se/ch9/alex/primary.fxml"));
-        loader.load();
-        ((SecondaryController)loader.getController()).setdBaccess(dBaccess);
-    }
 }

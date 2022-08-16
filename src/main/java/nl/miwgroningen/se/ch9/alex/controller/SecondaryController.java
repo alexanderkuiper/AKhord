@@ -15,7 +15,6 @@ import nl.miwgroningen.se.ch9.alex.database.DBaccess;
 public class SecondaryController implements Initializable {
 
     private Akkoord gekozenAkkoord;
-    private DBaccess dBaccess;
 
     @FXML
     private Label akkoordLabel;
@@ -33,7 +32,7 @@ public class SecondaryController implements Initializable {
 
 
     private void pullChordFromDatabase() {
-        DBaccess dBaccess = new DBaccess("akkoord", "user", "password");
+        DBaccess dBaccess = App.getdBaccess();
         AkkoordKeuzeDAO akkoordKeuzeDAO = new AkkoordKeuzeDAO(dBaccess);
         dBaccess.openConnection();
 
@@ -42,7 +41,4 @@ public class SecondaryController implements Initializable {
         dBaccess.closeConnection();
     }
 
-    public void setdBaccess(DBaccess dBaccess) {
-        this.dBaccess = dBaccess;
-    }
 }
