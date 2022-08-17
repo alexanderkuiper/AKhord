@@ -3,6 +3,7 @@ package nl.miwgroningen.se.ch9.alex.controller;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
@@ -19,6 +20,8 @@ public class SecondaryController implements Initializable {
     @FXML
     private Label akkoordLabel;
     @FXML
+    private Label notenLabel;
+    @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("primary");
     }
@@ -27,6 +30,7 @@ public class SecondaryController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         pullChordFromDatabase();
         akkoordLabel.setText(gekozenAkkoord.toString());
+        notenLabel.setText(Arrays.toString(gekozenAkkoord.geefTonenInAkkoord()));
     }
 
 

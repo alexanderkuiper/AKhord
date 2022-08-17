@@ -28,8 +28,8 @@ public class PrimaryController implements Initializable {
     @FXML
     private ChoiceBox<String> toonsoortSelectorBox;
 
-    private String[] tonen = {"A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"};
-    private String[] toonsoorten = {"Majeur", "Mineur"};
+//    private String[] tonen = {"A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"};
+//    private String[] toonsoorten = {"Majeur", "Mineur"};
     private String mijnToon = "";
     private String mijnToonsoort = "";
     private Akkoord akkoord = new Akkoord(mijnToon, mijnToonsoort);
@@ -54,9 +54,9 @@ public class PrimaryController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        toonSelectorBox.getItems().addAll(tonen);
+        toonSelectorBox.getItems().addAll(Akkoord.getTonen());
         toonSelectorBox.setOnAction(this::getToon); //"this::" is een "method reference operator"
-        toonsoortSelectorBox.getItems().addAll(toonsoorten);
+        toonsoortSelectorBox.getItems().addAll(Akkoord.getToonsoorten());
         toonsoortSelectorBox.setOnAction(this::getToonsoort); //"this::" is een "method reference operator"
     }
 

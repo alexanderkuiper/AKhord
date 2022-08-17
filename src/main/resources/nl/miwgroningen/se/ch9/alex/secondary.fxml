@@ -13,6 +13,7 @@
          </VBox.margin></Label>
       <Label text="Gekozen akkoord:" />
         <Label fx:id="akkoordLabel"/>
+        <Label fx:id="notenLabel"/>
         <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="Terug naar akkoordkeuze" />
     </children>
     <padding>

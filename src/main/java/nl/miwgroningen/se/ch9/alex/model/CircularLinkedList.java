@@ -1,11 +1,13 @@
 package nl.miwgroningen.se.ch9.alex.model;
 
+import java.util.LinkedList;
+
 /**
  * @author Alex Kuiper <al.kuiper@st.hanze.nl>
  * <p>
  * Circular Linked List class
  */
-public class CircularLinkedList {
+public class CircularLinkedList extends LinkedList {
     private Node head = null;
     private Node tail = null;
 
@@ -35,8 +37,6 @@ public class CircularLinkedList {
             } while (current != head);
             System.out.println();
         }
-
-
     }
 
     public void setHead(int index) {
