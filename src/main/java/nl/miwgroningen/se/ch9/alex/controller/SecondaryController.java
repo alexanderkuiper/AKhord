@@ -30,7 +30,7 @@ public class SecondaryController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         pullChordFromDatabase();
         akkoordLabel.setText(gekozenAkkoord.toString());
-        notenLabel.setText(Arrays.toString(gekozenAkkoord.geefTonenInAkkoord()));
+        notenLabel.setText(gekozenAkkoord.geefTonenInAkkoord().toString());
     }
 
 

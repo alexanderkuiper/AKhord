@@ -1,5 +1,6 @@
 package nl.miwgroningen.se.ch9.alex.model;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 /**
@@ -7,7 +8,7 @@ import java.util.LinkedList;
  * <p>
  * Circular Linked List class
  */
-public class CircularLinkedList extends LinkedList {
+public class CircularLinkedList {
     private Node head = null;
     private Node tail = null;
 
@@ -38,6 +39,21 @@ public class CircularLinkedList extends LinkedList {
             System.out.println();
         }
     }
+
+    public ArrayList<String> fillArray() {
+        ArrayList<String> arrayList = new ArrayList<>();
+        Node current = head;
+        if (head == null) {
+            System.out.println("Lijst is leeg");
+        } else {
+            do {
+                arrayList.add(current.value);
+                current = current.nextNode;
+            } while (current != head);
+        }
+        return arrayList;
+    }
+
 
     public void setHead(int index) {
         if (index > 1) {
