@@ -6,9 +6,11 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="317.0" prefWidth="449.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.miwgroningen.se.ch9.alex.controller.PrimaryController">
+<VBox alignment="CENTER" prefHeight="317.0" prefWidth="449.0" spacing="20.0" xmlns="http://javafx.com/javafx/18"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.miwgroningen.se.ch9.alex.controller.PrimaryController">
    <children>
       <Label fx:id="toonLabel" text="Selecteer een toon" />
+      <Label text="Label" />
       <ChoiceBox fx:id="toonSelectorBox" prefHeight="25.0" prefWidth="38.0" />
       <Label fx:id="toonsoortLabel" text="Selecteer een toonsoort" />
       <ChoiceBox fx:id="toonsoortSelectorBox" prefHeight="25.0" prefWidth="107.0" />
