@@ -4,18 +4,36 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="317.0" prefWidth="449.0" spacing="20.0" xmlns="http://javafx.com/javafx/18"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.miwgroningen.se.ch9.alex.controller.PrimaryController">
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="300.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.miwgroningen.se.ch9.alex.controller.PrimaryController">
    <children>
-      <Label fx:id="toonLabel" text="Selecteer een toon" />
-      <Label text="Label" />
-      <ChoiceBox fx:id="toonSelectorBox" prefHeight="25.0" prefWidth="38.0" />
-      <Label fx:id="toonsoortLabel" text="Selecteer een toonsoort" />
-      <ChoiceBox fx:id="toonsoortSelectorBox" prefHeight="25.0" prefWidth="107.0" />
-      <Label fx:id="keuzeLabel" text="Kies een akkoord" />
-      <Button fx:id="primaryButton" onAction="#submitUserChoice" text="OK" />
+      <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="260.0">
+         <children>
+            <Button fx:id="primaryButton" layoutX="113.0" layoutY="226.0" onAction="#submitUserChoice" text="OK" />
+            <Label fx:id="keuzeLabel" layoutX="81.0" layoutY="14.0" text="Kies een akkoord" />
+            <ChoiceBox fx:id="toonsoortSelectorBox" layoutX="73.0" layoutY="175.0" prefHeight="25.0" prefWidth="107.0" />
+            <Label fx:id="toonsoortLabel" layoutX="63.0" layoutY="146.0" text="Selecteer een toonsoort" />
+            <ChoiceBox fx:id="toonSelectorBox" layoutX="107.0" layoutY="88.0" prefHeight="25.0" prefWidth="38.0" />
+            <Label fx:id="toonLabel" layoutX="80.0" layoutY="60.0" text="Selecteer een toon" />
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" prefHeight="21.0" prefWidth="260.0">
+         <children>
+            <Label alignment="BOTTOM_CENTER" prefHeight="21.0" prefWidth="234.0" text="Recent gekozen akkoorden" />
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="31.0" prefWidth="230.0">
+         <children>
+            <Button fx:id="akkoord1" alignment="CENTER" mnemonicParsing="false" text="Leeg" visible="false" />
+            <Button fx:id="akkoord2" alignment="CENTER" mnemonicParsing="false" text="Leeg" visible="false" />
+            <Button fx:id="akkoord3" alignment="CENTER" mnemonicParsing="false" text="Leeg" visible="false" />
+            <Button fx:id="akkoord4" alignment="CENTER" mnemonicParsing="false" text="Leeg" visible="false" />
+            <Button fx:id="akkoord5" alignment="CENTER" mnemonicParsing="false" text="Leeg" visible="false" />
+         </children>
+      </HBox>
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

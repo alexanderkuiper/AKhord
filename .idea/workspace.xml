@@ -5,17 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75b803fc-76d6-499b-a0d4-7f40348f679b" name="Changes" comment="TODO: pass DBaccess">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Tertiary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/tertiary.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/database/AKkoordCreate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/AKkoordCreate.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/database/mysql-connector-java-8.0.16.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database/mysql-connector-java-8.0.16.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/nl/miwgroningen/se/ch9/alex/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/primary.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/nl/miwgroningen/se/ch9/alex/secondary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/secondary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/Akkoord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/Akkoord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/PrimaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/SecondaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/primary.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,20 +38,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Code/JAVA/AKHord2/src/main/resources/database/mysql-connector-java-8.0.16.jar",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.28275862",
-    "settings.editor.selected.configurable": "Ignore Files Support"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Code/JAVA/AKHord2/src/main/resources/database/mysql-connector-java-8.0.16.jar&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.28275862&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Ignore Files Support&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Code\JAVA\AKHord2\.idea" />
@@ -101,7 +110,9 @@
       <workItem from="1660566599266" duration="1683000" />
       <workItem from="1660568365910" duration="9000" />
       <workItem from="1660633859072" duration="18809000" />
-      <workItem from="1660975004771" duration="5345000" />
+      <workItem from="1660975004771" duration="5507000" />
+      <workItem from="1661261486194" duration="2836000" />
+      <workItem from="1661415876349" duration="5657000" />
     </task>
     <task id="LOCAL-00001" summary="TODO: pass DBaccess">
       <created>1660567524310</created>

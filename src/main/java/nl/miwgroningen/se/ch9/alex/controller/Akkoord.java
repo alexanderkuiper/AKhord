@@ -1,5 +1,7 @@
 package nl.miwgroningen.se.ch9.alex.controller;
 
+import nl.miwgroningen.se.ch9.alex.database.AkkoordKeuzeDAO;
+import nl.miwgroningen.se.ch9.alex.database.DBaccess;
 import nl.miwgroningen.se.ch9.alex.model.CircularLinkedList;
 
 import java.util.ArrayList;
@@ -63,6 +65,33 @@ public class Akkoord {
         result.add(chord.get(toonsoortInterval.get(1)));
         result.add(chord.get(toonsoortInterval.get(2)));
         return result;
+    }
+
+    public static void writeChordToDatabase(Akkoord mp_akkoord) {
+        DBaccess dBaccess = App.getdBaccess();
+        AkkoordKeuzeDAO akkoordKeuzeDAO = new AkkoordKeuzeDAO(dBaccess);
+        dBaccess.openConnection();
+        akkoordKeuzeDAO.slaAkkoordKeuzeOp(mp_akkoord);
+        dBaccess.closeConnection();
+    }
+
+    public static Akkoord pullChordFromDatabase(int mp_chordPosition) {
+        DBaccess dBaccess = App.getdBaccess();
+        AkkoordKeuzeDAO akkoordKeuzeDAO = new AkkoordKeuzeDAO(dBaccess);
+        Akkoord gekozenAkkoord = null;
+        dBaccess.openConnection();
+        try {
+            if (akkoordKeuzeDAO.toonAkkoorden().size() > 0) {
+                gekozenAkkoord =
+                        akkoordKeuzeDAO.toonAkkoorden().get(akkoordKeuzeDAO.toonAkkoorden().size() - mp_chordPosition);
+            } else {
+                System.out.println("No chord history yet");
+            }
+            } catch (IndexOutOfBoundsException indexOutOfBoundsException) {
+            System.out.println("Query is beyond the scope of the database");
+        }
+        dBaccess.closeConnection();
+        return gekozenAkkoord;
     }
 
     // Test purposes.. can delete TODO

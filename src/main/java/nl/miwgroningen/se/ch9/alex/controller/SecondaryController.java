@@ -13,9 +13,10 @@ import nl.miwgroningen.se.ch9.alex.controller.App;
 import nl.miwgroningen.se.ch9.alex.database.AkkoordKeuzeDAO;
 import nl.miwgroningen.se.ch9.alex.database.DBaccess;
 
+
 public class SecondaryController implements Initializable {
 
-    private Akkoord gekozenAkkoord;
+//    private static Akkoord gekozenAkkoord;
 
     @FXML
     private Label akkoordLabel;
@@ -28,21 +29,10 @@ public class SecondaryController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        pullChordFromDatabase();
-        akkoordLabel.setText(gekozenAkkoord.toString());
-        notenLabel.setText(gekozenAkkoord.geefTonenInAkkoord().toString());
-    }
-
-
-
-    private void pullChordFromDatabase() {
-        DBaccess dBaccess = App.getdBaccess();
-        AkkoordKeuzeDAO akkoordKeuzeDAO = new AkkoordKeuzeDAO(dBaccess);
-        dBaccess.openConnection();
-
-        gekozenAkkoord = akkoordKeuzeDAO.toonAkkoorden().get(akkoordKeuzeDAO.toonAkkoorden().size() - 1);
-
-        dBaccess.closeConnection();
+        // chordPosition of 1 is the latest entry
+        int chordPosition = 1;
+        akkoordLabel.setText(Akkoord.pullChordFromDatabase(chordPosition).toString());
+        notenLabel.setText(Akkoord.pullChordFromDatabase(chordPosition).geefTonenInAkkoord().toString());
     }
 
 }
