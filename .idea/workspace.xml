@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75b803fc-76d6-499b-a0d4-7f40348f679b" name="Changes" comment="TODO: pass DBaccess">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/Tertiary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/tertiary.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/Akkoord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/Akkoord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/PrimaryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/SecondaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/database/AkkoordKeuzeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/database/AkkoordKeuzeDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/primary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/primary.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +111,8 @@
       <workItem from="1660633859072" duration="18809000" />
       <workItem from="1660975004771" duration="5507000" />
       <workItem from="1661261486194" duration="2836000" />
-      <workItem from="1661415876349" duration="5657000" />
+      <workItem from="1661415876349" duration="6215000" />
+      <workItem from="1661511158959" duration="7379000" />
     </task>
     <task id="LOCAL-00001" summary="TODO: pass DBaccess">
       <created>1660567524310</created>

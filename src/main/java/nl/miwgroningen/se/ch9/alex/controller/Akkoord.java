@@ -75,16 +75,20 @@ public class Akkoord {
         dBaccess.closeConnection();
     }
 
-    public static Akkoord pullChordFromDatabase(int mp_chordPosition) {
+    public static Akkoord pullChordFromDatabase(int mp_chordPosition, boolean history) throws IndexOutOfBoundsException {
         DBaccess dBaccess = App.getdBaccess();
         AkkoordKeuzeDAO akkoordKeuzeDAO = new AkkoordKeuzeDAO(dBaccess);
         Akkoord gekozenAkkoord = null;
         dBaccess.openConnection();
         try {
-            if (akkoordKeuzeDAO.toonAkkoorden().size() > 0) {
+            if (akkoordKeuzeDAO.pullAllChords().size() > 0 && !history) {
                 gekozenAkkoord =
-                        akkoordKeuzeDAO.toonAkkoorden().get(akkoordKeuzeDAO.toonAkkoorden().size() - mp_chordPosition);
-            } else {
+                        akkoordKeuzeDAO.pullAllChords().get(akkoordKeuzeDAO.pullAllChords().size() - mp_chordPosition);
+            } else if (akkoordKeuzeDAO.pullHistoryChords().size() > 0 && history) {
+                gekozenAkkoord =
+                        akkoordKeuzeDAO.pullHistoryChords().get(akkoordKeuzeDAO.pullHistoryChords().size() - mp_chordPosition);
+            }
+            else {
                 System.out.println("No chord history yet");
             }
             } catch (IndexOutOfBoundsException indexOutOfBoundsException) {

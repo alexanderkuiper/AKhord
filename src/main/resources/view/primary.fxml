@@ -27,11 +27,11 @@
       </HBox>
       <HBox alignment="BOTTOM_CENTER" prefHeight="31.0" prefWidth="230.0">
          <children>
-            <Button fx:id="akkoord1" alignment="CENTER" mnemonicParsing="false" text="Leeg" visible="false" />
-            <Button fx:id="akkoord2" alignment="CENTER" mnemonicParsing="false" text="Leeg" visible="false" />
-            <Button fx:id="akkoord3" alignment="CENTER" mnemonicParsing="false" text="Leeg" visible="false" />
-            <Button fx:id="akkoord4" alignment="CENTER" mnemonicParsing="false" text="Leeg" visible="false" />
-            <Button fx:id="akkoord5" alignment="CENTER" mnemonicParsing="false" text="Leeg" visible="false" />
+            <Button fx:id="akkoord1" alignment="CENTER" onAction="#handleButtoneOne" text="Leeg" visible="false" />
+            <Button fx:id="akkoord2" alignment="CENTER" onAction="#handleButtonTwo" text="Leeg" visible="false" />
+            <Button fx:id="akkoord3" alignment="CENTER" onAction="#handleButtonThree" text="Leeg" visible="false" />
+            <Button fx:id="akkoord4" alignment="CENTER" onAction="#handleButtonFour" text="Leeg" visible="false" />
+            <Button fx:id="akkoord5" alignment="CENTER" onAction="#handleButtonFive" text="Leeg" visible="false" />
          </children>
       </HBox>
    </children>

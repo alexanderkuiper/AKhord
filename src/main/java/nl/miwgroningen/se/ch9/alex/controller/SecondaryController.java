@@ -31,8 +31,8 @@ public class SecondaryController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         // chordPosition of 1 is the latest entry
         int chordPosition = 1;
-        akkoordLabel.setText(Akkoord.pullChordFromDatabase(chordPosition).toString());
-        notenLabel.setText(Akkoord.pullChordFromDatabase(chordPosition).geefTonenInAkkoord().toString());
+        akkoordLabel.setText(Akkoord.pullChordFromDatabase(chordPosition, false).toString());
+        notenLabel.setText(Akkoord.pullChordFromDatabase(chordPosition,false).geefTonenInAkkoord().toString());
     }
 
 }

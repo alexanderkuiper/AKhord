@@ -30,9 +30,19 @@ public class AkkoordKeuzeDAO extends AbstractDAO {
         }
     }
 
-    public ArrayList<Akkoord> toonAkkoorden() {
-        ArrayList<Akkoord> akkoorden = new ArrayList<>();
+    public ArrayList<Akkoord> pullAllChords() {
         String sql = "SELECT toon, toonsoort FROM userchord;";
+        return pullChords(sql);
+    }
+
+    public ArrayList<Akkoord> pullHistoryChords() {
+        String sql = "SELECT DISTINCT toon, toonsoort FROM userchord ORDER BY id DESC;";
+        return pullChords(sql);
+    }
+
+
+    public ArrayList<Akkoord> pullChords(String sql) {
+        ArrayList<Akkoord> akkoorden = new ArrayList<>();
 
         try {
             setupPreparedStatement(sql);

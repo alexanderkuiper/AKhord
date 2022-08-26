@@ -69,7 +69,7 @@ public class PrimaryController implements Initializable {
     private void setChordHistory() {
         Button[] buttons = {akkoord1, akkoord2, akkoord3, akkoord4, akkoord5};
         for (int chordPosition = 0; chordPosition < NUMBER_OF_HISTORY; chordPosition++) {
-            Akkoord historyChord = Akkoord.pullChordFromDatabase(chordPosition + 1);
+            Akkoord historyChord = Akkoord.pullChordFromDatabase(chordPosition + 1, true);
             if (historyChord != null) {
                 buttons[chordPosition].setVisible(true);
                 buttons[chordPosition].setText(historyChord.getToon() + " " + historyChord.getToonsoort());
@@ -77,9 +77,37 @@ public class PrimaryController implements Initializable {
         }
     }
 
-    // TODO: implement function that shows the history chord
-    private void clickHistoryButton() {
 
+
+    // TODO: implement function that shows the history chord
+    @FXML
+    private void handleButtoneOne() {
+        clickHistoryButton(1);
+    }
+    @FXML
+    private void handleButtonTwo() {
+        clickHistoryButton(2);
+    }
+    @FXML
+    private void handleButtonThree() {
+        clickHistoryButton(3);
+    }
+    @FXML
+    private void handleButtonFour() {
+        clickHistoryButton(4    );
+    }
+    @FXML
+    private void handleButtonFive() {
+        clickHistoryButton(5);
+    }
+    private void clickHistoryButton(int buttonNumber) {
+        try {
+            akkoord = Akkoord.pullChordFromDatabase(buttonNumber, true);
+            Akkoord.writeChordToDatabase(akkoord);
+            App.setRoot("secondary");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
