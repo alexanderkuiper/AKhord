@@ -28,6 +28,7 @@ public class App extends Application {
         stage.getIcons().add(ICON);
         stage.setTitle("AKhord");
         stage.setResizable(false);
+        scene.getStylesheets().add(String.valueOf(this.getClass().getResource("/view/style.css")));
         stage.setScene(scene);
         stage.show();
 
