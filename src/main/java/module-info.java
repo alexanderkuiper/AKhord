@@ -7,4 +7,6 @@ module nl.miwgroningen.se.ch9.alex {
 //    exports nl.miwgroningen.se.ch9.alex;
     exports nl.miwgroningen.se.ch9.alex.controller;
     opens nl.miwgroningen.se.ch9.alex.controller to javafx.fxml;
+    exports nl.miwgroningen.se.ch9.alex.model;
+    opens nl.miwgroningen.se.ch9.alex.model to javafx.fxml;
 }

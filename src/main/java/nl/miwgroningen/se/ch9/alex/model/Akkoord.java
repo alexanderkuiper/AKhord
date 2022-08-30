@@ -1,9 +1,8 @@
-package nl.miwgroningen.se.ch9.alex.controller;
+package nl.miwgroningen.se.ch9.alex.model;
 
+import nl.miwgroningen.se.ch9.alex.controller.App;
 import nl.miwgroningen.se.ch9.alex.database.AkkoordKeuzeDAO;
 import nl.miwgroningen.se.ch9.alex.database.DBaccess;
-import nl.miwgroningen.se.ch9.alex.model.ChromaticScale;
-import nl.miwgroningen.se.ch9.alex.model.CircularLinkedList;
 
 import java.util.ArrayList;
 

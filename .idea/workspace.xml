@@ -64,13 +64,13 @@
       <recent name="D:\Code\JAVA\AKHord2\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.nl.miwgroningen.se.ch9.alex.controller.App">
+    <configuration name="nl.miwgroningen.se.ch9.alex.controller.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nl.miwgroningen.se.ch9.alex.controller.App" />
       <module name="AKHord2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nl.miwgroningen.se.ch9.alex.controller.*" />
+          <option name="PATTERN" value="nl.miwgroningen.se.ch9.alex.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="nl.miwgroningen.se.ch9.alex.controller.TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nl.miwgroningen.se.ch9.alex.controller.TestMain" />
       <module name="AKHord2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nl.miwgroningen.se.ch9.alex.controller.*" />
+          <option name="PATTERN" value="nl.miwgroningen.se.ch9.alex.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,8 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.TestMain" />
+        <item itemvalue="Application.nl.miwgroningen.se.ch9.alex.controller.App" />
+        <item itemvalue="Application.nl.miwgroningen.se.ch9.alex.controller.TestMain" />
       </list>
     </recent_temporary>
   </component>

@@ -1,6 +1,6 @@
 package nl.miwgroningen.se.ch9.alex.database;
 
-import nl.miwgroningen.se.ch9.alex.controller.Akkoord;
+import nl.miwgroningen.se.ch9.alex.model.Akkoord;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

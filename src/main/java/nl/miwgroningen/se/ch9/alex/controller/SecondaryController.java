@@ -2,16 +2,12 @@ package nl.miwgroningen.se.ch9.alex.controller;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import nl.miwgroningen.se.ch9.alex.controller.App;
-import nl.miwgroningen.se.ch9.alex.database.AkkoordKeuzeDAO;
-import nl.miwgroningen.se.ch9.alex.database.DBaccess;
+import nl.miwgroningen.se.ch9.alex.model.Akkoord;
 
 
 public class SecondaryController implements Initializable {

@@ -8,14 +8,12 @@ import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
-import nl.miwgroningen.se.ch9.alex.database.AkkoordKeuzeDAO;
-import nl.miwgroningen.se.ch9.alex.database.DBaccess;
+import nl.miwgroningen.se.ch9.alex.model.Akkoord;
 import nl.miwgroningen.se.ch9.alex.model.ChromaticScale;
 
 public class PrimaryController implements Initializable {
