@@ -33,6 +33,7 @@ public class SecondaryController implements Initializable {
         int chordPosition = 1;
         akkoordLabel.setText(Akkoord.pullChordFromDatabase(chordPosition, false).toString());
         notenLabel.setText(Akkoord.pullChordFromDatabase(chordPosition,false).geefTonenInAkkoord().toString());
+
     }
 
 }

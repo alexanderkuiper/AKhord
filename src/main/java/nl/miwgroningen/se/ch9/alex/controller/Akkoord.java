@@ -2,6 +2,7 @@ package nl.miwgroningen.se.ch9.alex.controller;
 
 import nl.miwgroningen.se.ch9.alex.database.AkkoordKeuzeDAO;
 import nl.miwgroningen.se.ch9.alex.database.DBaccess;
+import nl.miwgroningen.se.ch9.alex.model.ChromaticScale;
 import nl.miwgroningen.se.ch9.alex.model.CircularLinkedList;
 
 import java.util.ArrayList;
@@ -25,26 +26,14 @@ public class Akkoord {
         this.toonsoort = toonsoort;
     }
 
-    public ArrayList geefTonenInAkkoord() {
+    public ArrayList<String> geefTonenInAkkoord() {
         // Set the base of the chord interval to major
         toonsoortInterval.add(0, 0);
         toonsoortInterval.add(1, 4);
         toonsoortInterval.add(2, 7);
-        // detect the index of the chosen note
-        int toonIndex = 0;
-        for (int i = 0; i < tonen.length; i++) {
-            if (toon.equals(tonen[i])) {
-                toonIndex = i + 1;
-            }
-        }
-        // fill the list
-        CircularLinkedList tonenLijst = new CircularLinkedList();
-        for (String toon : tonen) {
-            tonenLijst.addNode(toon);
-        }
-        // set the chosen note as the root note of the circular linked list
-        tonenLijst.setHead(toonIndex);
-        // return the chord depending on the mode
+
+        ChromaticScale scale = new ChromaticScale(toon);
+        CircularLinkedList tonenLijst = scale.getNotesList();
         switch (toonsoort) {
             case "Majeur":
                 return geefAkkoord(tonenLijst);
@@ -54,12 +43,10 @@ public class Akkoord {
             default:
                 return null;
         }
-//        tonenLijst.display();
     }
 
     private ArrayList<String> geefAkkoord(CircularLinkedList tonenLijst) {
         ArrayList<String> chord = tonenLijst.fillArray();
-//        printArrayList(chord);
         ArrayList<String> result = new ArrayList<>();
         result.add(chord.get(toonsoortInterval.get(0)));
         result.add(chord.get(toonsoortInterval.get(1)));
