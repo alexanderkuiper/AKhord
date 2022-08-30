@@ -41,6 +41,10 @@ public class ChromaticScale {
         notesList.setHead(index);
     }
 
+    public static String[] getNotes() {
+        return notes;
+    }
+
     public CircularLinkedList getNotesList() {
         return notesList;
     }

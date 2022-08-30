@@ -16,6 +16,7 @@ import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 import nl.miwgroningen.se.ch9.alex.database.AkkoordKeuzeDAO;
 import nl.miwgroningen.se.ch9.alex.database.DBaccess;
+import nl.miwgroningen.se.ch9.alex.model.ChromaticScale;
 
 public class PrimaryController implements Initializable {
 
@@ -112,7 +113,7 @@ public class PrimaryController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        toonSelectorBox.getItems().addAll(Akkoord.getTonen());
+        toonSelectorBox.getItems().addAll(ChromaticScale.getNotes());
         toonSelectorBox.setOnAction(this::getToon); //"this::" is een "method reference operator"
         toonsoortSelectorBox.getItems().addAll(Akkoord.getToonsoorten());
         toonsoortSelectorBox.setOnAction(this::getToonsoort); //"this::" is een "method reference operator"

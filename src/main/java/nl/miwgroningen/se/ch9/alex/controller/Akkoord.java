@@ -13,7 +13,6 @@ import java.util.ArrayList;
  * Klasse voor akkoord: een toon en toonsoort.
  */
 public class Akkoord {
-    private static final String[] tonen = {"A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"};
     private static final String[] toonsoorten = {"Majeur", "Mineur"};
 
     private static ArrayList<Integer> toonsoortInterval = new ArrayList<>();
@@ -104,6 +103,9 @@ public class Akkoord {
     public String getToonsoort() {
         return toonsoort;
     }
+    public static String[] getToonsoorten() {
+        return toonsoorten;
+    }
 
     public void setToon(String toon) {
         this.toon = toon;
@@ -112,13 +114,6 @@ public class Akkoord {
     public void setToonsoort(String toonsoort) {
         this.toonsoort = toonsoort;
     }
-
-    public static String[] getTonen() {
-        return tonen;
-    }
-
-    public static String[] getToonsoorten() {
-        return toonsoorten;
-    }
 }
+
 
