@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75b803fc-76d6-499b-a0d4-7f40348f679b" name="Changes" comment="TODO: pass DBaccess">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/Akkoord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/Akkoord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/PrimaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/PrimaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/model/ChromaticScale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/model/ChromaticScale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/SecondaryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +56,10 @@
       <recent name="D:\Code\JAVA\AKHord2\src\main\resources\nl\miwgroningen\se\ch9\alex" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\JAVA\AKHord2\src\main\resources\schema" />
       <recent name="D:\Code\JAVA\AKHord2\src\main\resources\images" />
       <recent name="D:\Code\JAVA\AKHord2\src\main\resources\database" />
       <recent name="D:\Code\JAVA\AKHord2\src\main\resources\DBscript" />
-      <recent name="D:\Code\JAVA\AKHord2\src\main\resources\schema" />
       <recent name="D:\Code\JAVA\AKHord2\src\main\resources" />
     </key>
   </component>
@@ -114,7 +113,8 @@
       <workItem from="1661415876349" duration="6215000" />
       <workItem from="1661511158959" duration="7599000" />
       <workItem from="1661791627574" duration="4929000" />
-      <workItem from="1661865988340" duration="8923000" />
+      <workItem from="1661865988340" duration="9170000" />
+      <workItem from="1661952768182" duration="1840000" />
     </task>
     <task id="LOCAL-00001" summary="TODO: pass DBaccess">
       <created>1660567524310</created>
