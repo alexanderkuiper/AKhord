@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75b803fc-76d6-499b-a0d4-7f40348f679b" name="Changes" comment="TODO: pass DBaccess">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/model/UkuleleString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/SecondaryController.java" afterDir="false" />
     </list>
@@ -20,6 +20,7 @@
         <option value="FxmlFile" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -114,7 +115,8 @@
       <workItem from="1661511158959" duration="7599000" />
       <workItem from="1661791627574" duration="4929000" />
       <workItem from="1661865988340" duration="9170000" />
-      <workItem from="1661952768182" duration="1840000" />
+      <workItem from="1661952768182" duration="2766000" />
+      <workItem from="1662031555646" duration="12418000" />
     </task>
     <task id="LOCAL-00001" summary="TODO: pass DBaccess">
       <created>1660567524310</created>
