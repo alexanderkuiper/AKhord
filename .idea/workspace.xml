@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75b803fc-76d6-499b-a0d4-7f40348f679b" name="Changes" comment="TODO: pass DBaccess">
-      <change afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/model/UkuleleString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/model/Ukulele.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/SecondaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/SecondaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/miwgroningen/se/ch9/alex/controller/TestMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,7 +65,7 @@
       <recent name="D:\Code\JAVA\AKHord2\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.nl.miwgroningen.se.ch9.alex.controller.App">
+  <component name="RunManager" selected="Application.nl.miwgroningen.se.ch9.alex.controller.TestMain">
     <configuration name="nl.miwgroningen.se.ch9.alex.controller.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nl.miwgroningen.se.ch9.alex.controller.App" />
       <module name="AKHord2" />
@@ -93,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.nl.miwgroningen.se.ch9.alex.controller.App" />
         <item itemvalue="Application.nl.miwgroningen.se.ch9.alex.controller.TestMain" />
+        <item itemvalue="Application.nl.miwgroningen.se.ch9.alex.controller.App" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +117,8 @@
       <workItem from="1661791627574" duration="4929000" />
       <workItem from="1661865988340" duration="9170000" />
       <workItem from="1661952768182" duration="2766000" />
-      <workItem from="1662031555646" duration="12418000" />
+      <workItem from="1662031555646" duration="13943000" />
+      <workItem from="1662117328065" duration="9799000" />
     </task>
     <task id="LOCAL-00001" summary="TODO: pass DBaccess">
       <created>1660567524310</created>
